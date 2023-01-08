@@ -24,7 +24,7 @@ const Map = ({ data }) => {
           weight={0.5}
         >
           <Popup>
-            <p>{((((circle.radius / 1000) * circle.radius) / 1000) * 3.1416).toFixed(0)}</p>
+            <p>{((circle.radius / 1000) * (circle.radius / 1000) * 3.1416).toFixed(0)}</p>
           </Popup>
         </Circle>
       ))}

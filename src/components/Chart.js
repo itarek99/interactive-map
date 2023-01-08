@@ -1,10 +1,15 @@
 import { Cell, Pie, PieChart, ResponsiveContainer } from 'recharts';
 
 const Chart = ({ data }) => {
-  let usages = [{ usage_point: 0 }, { usage_point: 0 }, { usage_point: 0 }, { usage_point: 0 }];
+  let usages = [
+    { name: '> $5K', usage_point: 0 },
+    { name: '$1K-$5K', usage_point: 0 },
+    { name: '$500-$1K', usage_point: 0 },
+    { name: '< $500', usage_point: 0 },
+  ];
 
   const totalCoverage = data.reduce((acc, cur) => {
-    return acc + cur.radius;
+    return acc + (((cur.radius / 1000) * cur.radius) / 1000) * 3.1416;
   }, 0);
 
   const totalUsages = data.reduce((acc, cur) => {
@@ -64,7 +69,7 @@ const Chart = ({ data }) => {
         <div className='flex items-center gap-2'>
           <div className='h-4 w-4 bg-blue-600 rounded-full'></div>
           <p>
-            Total Coverage: {(totalCoverage / 1000).toFixed(0)} km<sup>2</sup>
+            Total Coverage: {totalCoverage.toFixed(0)} km<sup>2</sup>
           </p>
         </div>
         <div className='flex items-center gap-2 mt-2'>

@@ -23,12 +23,7 @@
     "color": "#62b4ff",
     "usage": 900
   },
-  {
-    "center": [69.08, 78.88],
-    "radius": 500000,
-    "color": "#b7e6ff",
-    "usage": 400
-  },
+
   {
     "center": [55.08, 88.88],
     "radius": 500000,
@@ -48,9 +43,27 @@
     "usage": 6000
   },
   {
-    "center": [23.8, 90.4],
-    "radius": 200000,
+    "center": [-25.27, 133.77],
+    "radius": 500000,
     "color": "#2E28B7",
     "usage": 6000
+  },
+  {
+    "center": [-32.27, 145.77],
+    "radius": 300000,
+    "color": "#789EFF",
+    "usage": 4000
+  },
+  {
+    "center": [41.27, -87.77],
+    "radius": 300000,
+    "color": "#789EFF",
+    "usage": 4000
+  },
+  {
+    "center": [-14.23, -51.92],
+    "radius": 500000,
+    "color": "#789EFF",
+    "usage": 4000
   }
 ]
