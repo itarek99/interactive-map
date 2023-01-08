@@ -41,7 +41,7 @@ const Chart = ({ data }) => {
   };
 
   return (
-    <div>
+    <div className='flex flex-col-reverse sm:flex-row md:flex-col items-center gap-6 md:gap-2'>
       <ResponsiveContainer height={200} width={200}>
         <PieChart>
           <Pie
@@ -62,13 +62,13 @@ const Chart = ({ data }) => {
       </ResponsiveContainer>
       <div className='mt-6'>
         <div className='flex items-center gap-2'>
-          <div className='h-4 w-4 bg-blue-800'></div>
+          <div className='h-4 w-4 bg-blue-600 rounded-full'></div>
           <p>
             Total Coverage: {(totalCoverage / 1000).toFixed(0)} km<sup>2</sup>
           </p>
         </div>
         <div className='flex items-center gap-2 mt-2'>
-          <div className='h-4 w-4 bg-blue-800'></div>
+          <div className='h-4 w-4 bg-blue-600 rounded-full'></div>
           <p>Total Usages: {totalUsages}</p>
         </div>
       </div>
