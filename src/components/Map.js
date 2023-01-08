@@ -24,7 +24,10 @@ const Map = ({ data }) => {
           weight={0.5}
         >
           <Popup>
-            <p>{((circle.radius / 1000) * (circle.radius / 1000) * 3.1416).toFixed(0)}</p>
+            <p>
+              Coverage: {((circle.radius / 1000) * (circle.radius / 1000) * 3.1416).toFixed(0)} km<sup>2</sup>
+            </p>
+            <p className='m-0 !p-0'>Usages: {circle.usage}</p>
           </Popup>
         </Circle>
       ))}
