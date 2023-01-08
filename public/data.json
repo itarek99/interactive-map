@@ -1,0 +1,50 @@
+[
+  {
+    "center": [51.508, -0.11],
+    "radius": 300000,
+    "color": "#2E28B7",
+    "usage": 6000
+  },
+  {
+    "center": [51.5, -100.09],
+    "radius": 500000,
+    "color": "#789EFF",
+    "usage": 4000
+  },
+  {
+    "center": [22.08, 78.88],
+    "radius": 500000,
+    "color": "#789EFF",
+    "usage": 3000
+  },
+  {
+    "center": [45.08, 78.88],
+    "radius": 500000,
+    "color": "#62b4ff",
+    "usage": 900
+  },
+  {
+    "center": [69.08, 78.88],
+    "radius": 500000,
+    "color": "#b7e6ff",
+    "usage": 400
+  },
+  {
+    "center": [55.08, 88.88],
+    "radius": 500000,
+    "color": "#b7e6ff",
+    "usage": 400
+  },
+  {
+    "center": [60.08, 50.88],
+    "radius": 500000,
+    "color": "#b7e6ff",
+    "usage": 400
+  },
+  {
+    "center": [23.8, 90.4],
+    "radius": 200000,
+    "color": "#2E28B7",
+    "usage": 6000
+  }
+]
